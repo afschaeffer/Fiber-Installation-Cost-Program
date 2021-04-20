@@ -1,0 +1,15 @@
+# Amy Schaeffer
+# Added condition statements and expanded scope to include 
+# considerations for price variance
+
+print("WeLcOmE tO fIbEr OpTiC cAbLe InStAlLaTiOn CoMpAnY!")
+company_name = input('Company Name: ')
+feet_required = input('Feet of fiber optic cable needed to be installed: ')
+if float(feet_required) <= 100:  
+    calculated_cost = round(float(feet_required) * .87, 2)
+elif float(feet_required) <= 250:
+    calculated_cost = round(float(feet_required) * .80, 2)
+else:
+    calculated_cost = round(float(feet_required) * .70, 2)
+message = f"{company_name}, your estimated cost is: $ {calculated_cost}"
+print(message)
